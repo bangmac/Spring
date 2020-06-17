@@ -12,7 +12,7 @@ import java.util.TimeZone;
 public class TimeController {
 
     @GetMapping("/worldclock")
-    public String getTimeByTimezone(ModelMap model, @RequestParam(name = "city", required = false, defaultValue = "Asia/Ho_Chi_Minh") String city) {
+    public String getTimeByTimezone(ModelMap modelMap, @RequestParam(name = "city", required = false, defaultValue = "Asia/Ho_Chi_Minh") String city) {
         Date date = new Date(); // Get current time at local
         TimeZone local = TimeZone.getDefault(); // Get timezone by the local
         TimeZone locale = TimeZone.getTimeZone(city); // Get timezone by the specified city
@@ -21,8 +21,8 @@ public class TimeController {
         date.setTime(locale_time); // Reset the date by locale_time
 
         // Set the data sent to the view
-        model.addAttribute("city", city);
-        model.addAttribute("date", date);
+        modelMap.addAttribute("city", city);
+        modelMap.addAttribute("date", date);
         return "index";
     }
 }
