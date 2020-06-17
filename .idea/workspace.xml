@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14bb9b6d-857d-46c4-9dde-0fb2e67cf8f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-email-validation/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-greeting/out/artifacts/spring_greeting_war_exploded/WEB-INF/classes/controllers/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-greeting/out/artifacts/spring_greeting_war_exploded/WEB-INF/classes/controllers/GreetingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-greeting/out/artifacts/spring_greeting_war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-greeting/out/artifacts/spring_greeting_war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-greeting/out/production/spring-greeting/controllers/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-greeting/out/production/spring-greeting/controllers/GreetingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-greeting/src/controllers/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-greeting/src/controllers/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-greeting/web/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-greeting/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-greeting/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-greeting/web/WEB-INF/views/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spring-email-validation" />
+  </component>
+  <component name="ProjectId" id="1dQmDk9ROSVFjAMEjCMXihbBZRh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14bb9b6d-857d-46c4-9dde-0fb2e67cf8f5" name="Default Changelist" comment="" />
+      <created>1592365573152</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592365573152</updated>
+      <workItem from="1592365574571" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+</project>
