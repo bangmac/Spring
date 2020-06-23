@@ -11,7 +11,7 @@ import java.util.List;
 
 @Transactional
 public class CustomerRepositoryImpl implements CustomerRepository{
-
+    // truy xuất giữ liệu qua EntityManager
     @PersistenceContext
     private EntityManager em;
 
