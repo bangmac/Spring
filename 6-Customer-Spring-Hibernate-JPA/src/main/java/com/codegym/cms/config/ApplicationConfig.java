@@ -1,5 +1,9 @@
 package com.codegym.cms.config;
 
+import com.codegym.cms.repository.CustomerRepository;
+import com.codegym.cms.repository.CustomerRepositoryImpl;
+import com.codegym.cms.service.CustomerService;
+import com.codegym.cms.service.CustomerServiceImpl;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -109,4 +113,15 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
         return properties;
     }
+
+    @Bean
+    public CustomerRepository customerRepository(){
+        return new CustomerRepositoryImpl();
+    }
+
+    @Bean
+    public CustomerService customerService(){
+        return new CustomerServiceImpl();
+    }
+
 }
