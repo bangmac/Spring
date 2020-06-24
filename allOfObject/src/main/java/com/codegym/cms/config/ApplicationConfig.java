@@ -1,10 +1,7 @@
 package com.codegym.cms.config;
 
 import com.codegym.cms.formatter.ProvinceFormatter;
-import com.codegym.cms.service.CustomerService;
-import com.codegym.cms.service.CustomerServiceImpl;
-import com.codegym.cms.service.ProvinceService;
-import com.codegym.cms.service.ProvinceServiceImpl;
+import com.codegym.cms.service.*;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -129,6 +126,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return new ProvinceServiceImpl();
     }
 
+    @Bean
+    public CommentBlogService commentBlogService(){
+        return new CommentBlogSerivceImpl();
+    }
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addFormatter(new ProvinceFormatter(AppContext.getBean(ProvinceService.class)));
