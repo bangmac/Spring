@@ -11,6 +11,6 @@
   <title>$Title$</title>
 </head>
 <body>
-<a href="/start">START</a>
+<a>START</a>
 </body>
 </html>

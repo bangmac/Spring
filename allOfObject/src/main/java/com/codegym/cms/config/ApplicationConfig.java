@@ -127,9 +127,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     }
 
     @Bean
-    public CommentBlogService commentBlogService(){
-        return new CommentBlogSerivceImpl();
+    public BlogService blogService(){
+        return new BlogServiceImpl();
     }
+
     @Override
     public void addFormatters(FormatterRegistry registry) {
         registry.addFormatter(new ProvinceFormatter(AppContext.getBean(ProvinceService.class)));
