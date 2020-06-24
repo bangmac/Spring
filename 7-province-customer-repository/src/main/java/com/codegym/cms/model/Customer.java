@@ -18,6 +18,18 @@ public class Customer {
         this.lastName = lastName;
     }
 
+    @ManyToOne
+    @JoinColumn(name = "provice_id")
+    private Province province;
+
+    public Province getProvince(){
+        return province;
+    }
+
+    public void setProvince(Province province){
+        this.province = province;
+    }
+
     @Override
     public String toString() {
         return String.format("Customer[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);

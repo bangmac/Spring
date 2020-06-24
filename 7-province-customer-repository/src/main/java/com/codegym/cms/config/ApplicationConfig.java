@@ -1,5 +1,6 @@
 package com.codegym.cms.config;
 
+import com.codegym.cms.formatter.ProvinceFormatter;
 import com.codegym.cms.repository.CustomerRepository;
 import com.codegym.cms.service.CustomerService;
 import com.codegym.cms.service.CustomerServiceImpl;
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -124,5 +126,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Bean
     public ProvinceService provinceService(){
         return new ProvinceServiceImpl();
+    }
+
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        registry.addFormatter(new ProvinceFormatter(AppContext.getBean(ProvinceService.class)));
     }
 }

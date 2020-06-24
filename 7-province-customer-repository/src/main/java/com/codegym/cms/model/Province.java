@@ -7,9 +7,11 @@ import java.util.List;
 @Table(name = "provinces")
 public class Province {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+
+    public Province(){}
 
     @OneToMany(targetEntity = Customer.class)
     private List<Customer> customers;
