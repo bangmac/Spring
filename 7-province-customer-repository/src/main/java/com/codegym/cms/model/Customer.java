@@ -19,7 +19,7 @@ public class Customer {
     }
 
     @ManyToOne
-    @JoinColumn(name = "provice_id")
+    @JoinColumn(name = "province_id")
     private Province province;
 
     public Province getProvince(){

@@ -12,6 +12,7 @@ import java.util.Locale;
 
 @Component
 public class ProvinceFormatter implements Formatter<Province> {
+//    Lớp ProvinceFormatter sử dụng provinceService để chuyển đổi từ id của province sang object của province.
 
     private ProvinceService provinceService;
 

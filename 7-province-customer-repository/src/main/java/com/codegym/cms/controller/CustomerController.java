@@ -22,11 +22,10 @@ public class CustomerController {
     @Autowired
     private ProvinceService provinceService;
 
-    @ModelAttribute("provinces")
+    @ModelAttribute("provinces") // gắn danh sách provinces vào tất cả các model của customer views
     public Iterable<Province> provinces(){
         return provinceService.findAll();
     }
-// @ModelAttribyte("provinces") là cách để gắn danh sách provinces vào tất cả các model của view, có thể sử dụng ở phần view.
 
     @GetMapping("create-customer")
     public ModelAndView showCreateForm(){
