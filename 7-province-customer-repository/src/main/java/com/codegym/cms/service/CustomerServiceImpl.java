@@ -1,6 +1,7 @@
 package com.codegym.cms.service;
 
 import com.codegym.cms.model.Customer;
+import com.codegym.cms.model.Province;
 import com.codegym.cms.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -9,6 +10,11 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService{
     @Autowired
     private CustomerRepository customerRepository;
+
+    @Override
+    public Iterable<Customer> findAllCustomerByProvince(Province province) {
+        return customerRepository.findAllCustomerByProvince(province);
+    }
 
     @Override
     public Iterable<Customer> findByAll() {
