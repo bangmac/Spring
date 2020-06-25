@@ -3,11 +3,13 @@ package com.codegym.controller;
 import com.codegym.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
+import org.springframework.validation.annotation.Validated; // @Validate kế thừa từ @Valid của javax.validation.Valid
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
 
 @Controller
 public class UserController {
@@ -19,7 +21,8 @@ public class UserController {
     }
 
     @PostMapping("validateUser")
-    public ModelAndView checkValidation(@Validated @ModelAttribute("user") User user, BindingResult bindingResult){
+    public ModelAndView checkValidation(@Valid @ModelAttribute("user") User user, BindingResult bindingResult){
+        // dùng @Validated hay @Valid đều được, vì @Validated kế thừa từ @Valid của javax.validation.Valid
         if(bindingResult.hasErrors()){
             ModelAndView modelAndView = new ModelAndView("index");
             return modelAndView;
